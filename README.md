@@ -257,7 +257,7 @@
 
 * **URL**
 
-  /recentsongs.php
+  /recentSongs.php
 
 * **Method:**
 
@@ -275,7 +275,7 @@
 
   **Example:**
 
-  `/recentsongs.php
+  `/recentSongs.php
 
 * **Success Response:**
 
