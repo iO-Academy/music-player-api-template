@@ -101,18 +101,18 @@
     {
       "name": "When We All Fall Asleep, Where Do We Go?",
       "songs": [
-        "bad guy",
-        "bury a friend",
-        "you should see me in a crown"
-      ],
-      "artwork_url": "https://via.placeholder.com/400x400/386641/6A994E?text=The+Memory+of+Trees"
-    },
-    {
-      "name": "Happier Than Ever",
-      "songs": [
-        "NDA",
-        "Therefore I Am",
-        "Happier Than Ever"
+        {
+          "name": "bad guy",
+          "length": "3:28"
+        },
+        {
+          "name": "bury a friend",
+          "length": "3:28"
+        },
+        {
+          "name": "you should see me in a crown",
+          "length": "3:28"
+        }
       ],
       "artwork_url": "https://via.placeholder.com/400x400/386641/6A994E?text=The+Memory+of+Trees"
     }
