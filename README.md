@@ -103,15 +103,18 @@
       "songs": [
         {
           "name": "bad guy",
-          "length": "3:28"
+          "length": "3:28",
+          "play_count": 2
         },
         {
           "name": "bury a friend",
-          "length": "3:28"
+          "length": "3:28",
+          "play_count": 24
         },
         {
           "name": "you should see me in a crown",
-          "length": "3:28"
+          "length": "3:28",
+          "play_count": 7
         }
       ],
       "artwork_url": "https://via.placeholder.com/400x400/386641/6A994E?text=The+Memory+of+Trees"
