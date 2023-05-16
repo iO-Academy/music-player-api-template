@@ -422,3 +422,67 @@
 
     * **Code:** 500 SERVER ERROR <br />
       **Content:** `{"message": "Unexpected error", "data": []}`
+
+### Search for a song by song name
+
+* **URL**
+
+  /search.php
+
+* **Method:**
+
+  `GET`
+
+* **URL Params**
+
+  **Required:**
+
+  `name=string`
+
+  **Optional:**
+
+  There are no optional URL params
+
+  **Example:**
+
+  `/search.php?name=love`
+
+* **Success Response:**
+
+    * **Code:** 200 OK <br />
+      **Content:** <br />
+
+  ```json
+  [
+  {
+    "name": "Song title 1",
+    "artist": "Artist 1",
+    "length": "3:28",
+    "artwork_url": "https://via.placeholder.com/400x400/386641/6A994E?text=The+Memory+of+Trees",
+    "play_count": 5
+  },
+  {
+    "name": "Song title 2",
+    "artist": "Artist 2",
+    "length": "3:28",
+    "artwork_url": "https://via.placeholder.com/400x400/386641/6A994E?text=The+Memory+of+Trees",
+    "play_count": 5
+  },
+  {
+    "name": "Song title 3",
+    "artist": "Artist 3",
+    "length": "3:28",
+    "artwork_url": "https://via.placeholder.com/400x400/386641/6A994E?text=The+Memory+of+Trees",
+    "play_count": 5
+  }
+  ]
+  ```
+
+* **Error Response:**
+
+    * **Code:** 400 BAD REQUEST <br />
+      **Content:** `{"message": "Invalid search data", "data": []}`
+
+    * **Code:** 500 SERVER ERROR <br />
+      **Content:** `{"message": "Unexpected error", "data": []}`
+
