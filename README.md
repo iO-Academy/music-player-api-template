@@ -104,17 +104,20 @@
         {
           "name": "bad guy",
           "length": "3:28",
-          "play_count": 2
+          "play_count": 2,
+          "is_fav": true
         },
         {
           "name": "bury a friend",
           "length": "3:28",
-          "play_count": 24
+          "play_count": 24,
+          "is_fav": false
         },
         {
           "name": "you should see me in a crown",
           "length": "3:28",
-          "play_count": 7
+          "play_count": 7,
+          "is_fav": false
         }
       ],
       "artwork_url": "https://via.placeholder.com/400x400/386641/6A994E?text=The+Memory+of+Trees"
@@ -291,19 +294,22 @@
     "name": "Song title 1",
     "artist": "Artist 1",
     "length": "3:28",
-    "artwork_url": "https://via.placeholder.com/400x400/386641/6A994E?text=The+Memory+of+Trees"
+    "artwork_url": "https://via.placeholder.com/400x400/386641/6A994E?text=The+Memory+of+Trees",
+    "is_fav": false
   },
   {
     "name": "Song title 2",
     "artist": "Artist 2",
     "length": "3:28",
-    "artwork_url": "https://via.placeholder.com/400x400/386641/6A994E?text=The+Memory+of+Trees"
+    "artwork_url": "https://via.placeholder.com/400x400/386641/6A994E?text=The+Memory+of+Trees",
+    "is_fav": false
   },
   {
     "name": "Song title 3",
     "artist": "Artist 3",
     "length": "3:28",
-    "artwork_url": "https://via.placeholder.com/400x400/386641/6A994E?text=The+Memory+of+Trees"
+    "artwork_url": "https://via.placeholder.com/400x400/386641/6A994E?text=The+Memory+of+Trees",
+    "is_fav": true
   }
 ]
 ```
@@ -462,21 +468,24 @@
     "artist": "Artist 1",
     "length": "3:28",
     "artwork_url": "https://via.placeholder.com/400x400/386641/6A994E?text=The+Memory+of+Trees",
-    "play_count": 5
+    "play_count": 5,
+    "is_fav": false
   },
   {
     "name": "Song title 2",
     "artist": "Artist 2",
     "length": "3:28",
     "artwork_url": "https://via.placeholder.com/400x400/386641/6A994E?text=The+Memory+of+Trees",
-    "play_count": 5
+    "play_count": 5,
+    "is_fav": false
   },
   {
     "name": "Song title 3",
     "artist": "Artist 3",
     "length": "3:28",
     "artwork_url": "https://via.placeholder.com/400x400/386641/6A994E?text=The+Memory+of+Trees",
-    "play_count": 5
+    "play_count": 5,
+    "is_fav": true
   }
   ]
   ```
