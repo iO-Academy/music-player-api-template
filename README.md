@@ -312,3 +312,180 @@
 
   * **Code:** 500 SERVER ERROR <br />
     **Content:** `{"message": "Unexpected error"}`
+    
+### Mark a song as recently played
+
+* **URL**
+
+  /songPlayed.php
+
+* **Method:**
+
+  `POST`
+
+* **URL Params**
+
+  **Required:**
+
+  There are no required URL params
+
+  **Optional:**
+
+  There are no optional URL params
+
+* **Body Data**
+
+  Must be sent as JSON with the correct headers
+
+  **Required:**
+
+    ```json
+    {
+      "name": "String",
+      "artist": "String"
+    }
+    ```
+
+  **Example:**
+
+  `/songPlayed.php`
+
+* **Success Response:**
+
+    * **Code:** 201 CREATED <br />
+      **Content:** <br />
+
+  ```json
+  {"message": "Successfully recorded play."}
+  ```
+
+* **Error Response:**
+
+    * **Code:** 400 BAD REQUEST <br />
+      **Content:** `{"message": "Invalid song data", "data": []}`
+
+    * **Code:** 500 SERVER ERROR <br />
+      **Content:** `{"message": "Unexpected error", "data": []}`
+      
+### Mark a song as favourite
+
+* **URL**
+
+  /favourite.php
+
+* **Method:**
+
+  `POST`
+
+* **URL Params**
+
+  **Required:**
+
+  There are no required URL params
+
+  **Optional:**
+
+  There are no optional URL params
+
+* **Body Data**
+
+  Must be sent as JSON with the correct headers
+
+  **Required:**
+
+    ```json
+    {
+      "name": "String" // name of the song
+    }
+    ```
+
+  **Example:**
+
+  `/favourite.php`
+
+* **Success Response:**
+
+    * **Code:** 202 ACCEPTED <br />
+      **Content:** <br />
+
+  ```json
+  {"message": "Successfully favourited song."}
+  ```
+  
+  OR
+ 
+   ```json
+    {"message": "Successfully unfavourited song."}
+    ```
+
+* **Error Response:**
+
+    * **Code:** 400 BAD REQUEST <br />
+      **Content:** `{"message": "Invalid song data", "data": []}`
+
+    * **Code:** 500 SERVER ERROR <br />
+      **Content:** `{"message": "Unexpected error", "data": []}`
+
+### Search for a song by song name
+
+* **URL**
+
+  /search.php
+
+* **Method:**
+
+  `GET`
+
+* **URL Params**
+
+  **Required:**
+
+  `name=string`
+
+  **Optional:**
+
+  There are no optional URL params
+
+  **Example:**
+
+  `/search.php?name=love`
+
+* **Success Response:**
+
+    * **Code:** 200 OK <br />
+      **Content:** <br />
+
+  ```json
+  [
+  {
+    "name": "Song title 1",
+    "artist": "Artist 1",
+    "length": "3:28",
+    "artwork_url": "https://via.placeholder.com/400x400/386641/6A994E?text=The+Memory+of+Trees",
+    "play_count": 5
+  },
+  {
+    "name": "Song title 2",
+    "artist": "Artist 2",
+    "length": "3:28",
+    "artwork_url": "https://via.placeholder.com/400x400/386641/6A994E?text=The+Memory+of+Trees",
+    "play_count": 5
+  },
+  {
+    "name": "Song title 3",
+    "artist": "Artist 3",
+    "length": "3:28",
+    "artwork_url": "https://via.placeholder.com/400x400/386641/6A994E?text=The+Memory+of+Trees",
+    "play_count": 5
+  }
+  ]
+  ```
+
+* **Error Response:**
+
+    * **Code:** 400 BAD REQUEST <br />
+      **Content:** `{"message": "Invalid search data", "data": []}`
+
+    * **Code:** 500 SERVER ERROR <br />
+      **Content:** `{"message": "Unexpected error", "data": []}`
+
