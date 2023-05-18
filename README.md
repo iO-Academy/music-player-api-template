@@ -401,7 +401,8 @@
 
     ```json
     {
-      "name": "String" // name of the song
+      "name": "String", // name of the song
+      "artist": "String" // name of the artist to prevent duplicate song names
     }
     ```
 
